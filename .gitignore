@@ -7,3 +7,6 @@
 # executable file
 assignment[0-9]/assignment[0-9]
 assignment[0-9][0-9]/assignment[0-9][0-9]
+
+# mac 
+.DS_Store
