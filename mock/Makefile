@@ -1,16 +1,13 @@
 CC = gcc
-CFLAG = -std=c11 -O2 -Wall
-TARGET = mock
-SRCS = mock.c
-OBJS = mock.o
+CFLAGS = -std=c11 -O2 -Wall
+TARGETS = mock mock_v2
 
-all: $(TARGET)
+.PHONY: all
+all: $(TARGETS)
 
-$(TARGET): $(OBJS)
-	$(CC) $(CFLAG) -o $(TARGET) $(OBJS)
+%: %.c
+	$(CC) -o $@ $(CFLAGS) $<
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
+.PHONY: clean
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -f $(TARGETS)

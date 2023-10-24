@@ -6,6 +6,7 @@
 
 # executable file
 mock/mock
+mock/mock_v2
 assignment[0-9]/assignment[0-9]
 assignment[0-9][0-9]/assignment[0-9][0-9]
 
