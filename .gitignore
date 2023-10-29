@@ -5,10 +5,12 @@
 *.o
 
 # executable file
-mock/mock
-mock/mock_v2
 assignment[0-9]/assignment[0-9]
 assignment[0-9][0-9]/assignment[0-9][0-9]
+*/mock
+*/mock_v2
+*/q[1-2]
+*/output[1-6]
 
 # mac 
 .DS_Store
