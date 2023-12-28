@@ -1,0 +1,13 @@
+diff --git a/bin/cat/Makefile b/bin/cat/Makefile
+index 46c7fd5e4ec..97b19e701e4 100644
+--- a/bin/cat/Makefile
++++ b/bin/cat/Makefile
+@@ -20,7 +20,7 @@ SUBDIR.${MK_TESTS}+= tests
+ #LIBADD+=        cap_net
+ #CFLAGS+=-DWITH_CASPER
+ #.endif
+-# Depend on Makefile to rebiuld when WITH_CASPER changes
++# Depend on Makefile to rebuild when WITH_CASPER changes
+ cat.o:	Makefile
+ 
+ .include <bsd.prog.mk>
